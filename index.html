@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__left">
+                <img src="img/Logo.png" alt="">
+            </div>
+
+            <div class="header__right">
+                <ul>
+                    <li>Marketplace</li>
+                    <li>Rankings</li>
+                    <li>Connect a wallet</li>
+                </ul>
+                <div class="header__btn" onclick="popupToggle()">
+                    <div class="header__btn__logo"></div>
+                    <p>Sign Up</p>
+                </div>
+                <div class="burger__main" onclick="popupToggle()">
+                    <div class="burger__1line">
+                        <hr>
+                    </div>
+                    <div class="burger__2line">
+                        <hr>
+                    </div>
+                    <div class="burger__1line">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup">
+            <h2>Create account</h2>
+            <div class="close__popup" onclick="popupToggle()">
+                <hr class="line1">
+                <hr class="line2">
+            </div>
+            <p>Welcome! enter your details and start creating, collecting and selling NFTs.</p>
+            <div class="popup__input">
+                <input type="text" placeholder="Username"> 
+                <input type="text" placeholder="Email Address">
+                <input type="text" placeholder="Password">
+                <input type="text" placeholder="Confrim Password">
+            </div>
+            <button>Create account</button>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__left">
+                    <div class="hero__text">
+                        <h1>Discover Digital Art & Collect NFTs</h1>
+                        <p>NFT Marketplace UI Created With Anima For Figma. Collect, Buy And Sell Art From More Than 20k NFT Artists.</p>
+                    </div>
+                    <div class="hero__btn display__none                                                                                                                                                                                                                                                                                                                        " >
+                        <div class="hero__btn__logo"></div>
+                        <p>Get Started</p>
+                    </div>
+                    <ul class="display__none">
+                        <li> <span>240k+</span>  <br> Total Sale</li>
+                        <li> <span>100k+</span> <br> Auctions</li>
+                        <li><span>240k+</span>  <br> Artists</li>
+                    </ul>
+                </div>
+                <div class="hero__right">
+                    <div class="hero__r__img"></div>
+                    <div class="hero__r__frame">
+                        <h5>Space Walking</h5>
+                        <div class="hero__f__logo">
+                            <img src="img/Avatar.png" alt="">
+                            <p>Animakid</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__btn display__none__hero" >
+                    <div class="hero__btn__logo"></div>
+                    <p>Get Started</p>
+                </div>
+                <ul class="display__none__hero">
+                    <li> <span>240k+</span>  <br> Total Sale</li>
+                    <li> <span>100k+</span> <br> Auctions</li>
+                    <li><span>240k+</span>  <br> Artists</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="trending">
+            <div class="container">
+                <div class="trending__top">
+                    <h3>Trending Collection</h3>
+                    <p>Checkout Our Weekly Updated Trending Collection.</p>
+                </div>
+                <div class="trending__bottom">
+                    <div class="trending__card">
+                        <img src="img/Primary Photo Placeholder.png" alt="">
+                        <div class="card__three">
+                            <img src="img/Secondary Photo Placeholder.png" alt="">
+                            <img src="img/Secondary Photo Placeholder (1).png" alt="">
+                            <img src="img/Number of additional NFTs.png" alt="">
+                        </div>
+                        <div class="hero__r__frame trending__frame">
+                            <h5>DSGN Animals </h5>
+                            <div class="hero__f__logo">
+                                <img src="img/Avatar (1).png" alt="">
+                                <p>MrFox</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trending__card ">
+                        <img src="img/Primary Photo Placeholder (1).png" alt="">
+                        <div class="card__three">
+                            <img src="img/Secondary Photo Placeholder (2).png" alt="">
+                            <img src="img/Secondary Photo Placeholder (3).png" alt="">
+                            <img src="img/Number of additional NFTs.png" alt="">
+                        </div>
+                        <div class="hero__r__frame trending__frame">
+                            <h5>Magic Mushrooms</h5>
+                            <div class="hero__f__logo">
+                                <img src="img/Avatar (2).png" alt="">
+                                <p>Shroomie</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trending__card display__none ">
+                        <img src="img/Primary Photo Placeholder (2).png" alt="">
+                        <div class="card__three">
+                            <img src="img/Secondary Photo Placeholder (4).png" alt="">
+                            <img src="img/Secondary Photo Placeholder (5).png" alt="">
+                            <img src="img/Number of additional NFTs.png" alt="">
+                        </div>
+                        <div class="hero__r__frame trending__frame">
+                            <h5>Disco Machines</h5>
+                            <div class="hero__f__logo">
+                                <img src="img/Avatar (3).png" alt="">
+                                <p>BeKind2Robots</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artisis">
+            <div class="container">
+                <div class="artists__top">
+                    <div class="artists__headline">
+                        <h3>Top creators</h3>
+                        <p>Checkout Top Rated Creators on the NFT Marketplace</p>
+                    </div>
+                    <div class="artists__btn artist__btn__media">
+                        <div class="artists__btn__logo"></div>
+                        <p>View Rankings</p>
+                    </div>
+                </div>
+                <div class="artists__bottom">
+                    <div class="artists__card">
+                        <img src="img/Avatar (4).png" class="artist__relative" alt="">
+                        <img src="img/Ranking Number.png" class="artist__absolute" alt="">
+                        <div class="artists__text">
+                            <h5>Keepitreal</h5>
+                        <p><span class="space__total">Total Sales:</span> <span class="spase__eth">34.53 ETH</span> </p>
+                        </div>
+                    </div>
+                    <div class="artists__card">
+                        <img src="img/Artist Avatar.png" class="artist__relative" alt="">
+                        <img src="img/Ranking Number (1).png" class="artist__absolute" alt="">
+                        <div class="artists__text">
+                            <h5>DigiLab</h5>
+                            <p><span class="space__total">Total Sales:</span> <span class="spase__eth">34.53 ETH</span> </p>
+                        </div>
+                    </div>
+                    <div class="artists__card">
+                        <img src="img/Artist Avatar (1).png" class="artist__relative" alt="">
+                        <img src="img/Ranking Number (2).png" class="artist__absolute" alt="">
+                        <div class="artists__text"><h5>GravityOne</h5>
+                            <p><span class="space__total">Total Sales:</span> <span class="spase__eth">34.53 ETH</span> </p></div>
+                        
+                    </div>
+                    <div class="artists__card">
+                        <img src="img/Artist Avatar (2).png" class="artist__relative" alt="">
+                        <img src="img/Ranking Number (3).png" class="artist__absolute" alt="">
+                        <div class="artists__text">
+                            <h5>Juanie</h5>
+                            <p><span class="space__total">Total Sales:</span> <span class="spase__eth">34.53 ETH</span> </p>
+                        </div>
+                    </div>
+                    <div class="artists__card">
+                        <img src="img/Artist Avatar (3).png" class="artist__relative" alt="">
+                        <img src="img/Ranking Number (4).png" class="artist__absolute" alt="">
+                        <div class="artists__text">
+                            <h5>BlueWhale</h5>
+                            <p><span class="space__total">Total Sales:</span> <span class="spase__eth">34.53 ETH</span> </p>
+                        </div>
+                    </div>
+                    <div class="artists__card">
+                        <img src="img/Artist Avatar (4).png" class="artist__relative" alt="">
+                        <img src="img/Ranking Number (5).png" class="artist__absolute" alt="">
+                        <div class="artists__text">
+                            <h5>Mr fox</h5>
+                            <p><span class="space__total">Total Sales:</span> <span class="spase__eth">34.53 ETH</span> </p>
+                        </div>
+                    </div>
+                    <div class="artists__card display__none">
+                        <img src="img/Artist Avatar (5).png" class="artist__relative" alt="">
+                        <img src="img/Ranking Number (6).png" class="artist__absolute" alt="">
+                        <h5>Shroomie</h5>
+                        <p><span class="space__total">Total Sales:</span> <span class="spase__eth">34.53 ETH</span> </p>
+                    </div>
+                    <div class="artists__card display__none">
+                        <img src="img/Artist Avatar (6).png" class="artist__relative" alt="">
+                        <img src="img/Ranking Number (7).png" class="artist__absolute" alt="">
+                        <h5>Robotica</h5>
+                        <p><span class="space__total">Total Sales:</span> <span class="spase__eth">34.53 ETH</span> </p>
+                    </div>
+                    <div class="artists__card display__none">
+                        <img src="img/Artist Avatar (7).png" class="artist__relative" alt="">
+                        <img src="img/Ranking Number (8).png" class="artist__absolute" alt="">
+                        <h5>RustyRobot</h5>
+                        <p><span class="space__total">Total Sales:</span> <span class="spase__eth">34.53 ETH</span> </p>
+                    </div>
+                    <div class="artists__card display__none">
+                        <img src="img/Artist Avatar (8).png" class="artist__relative" alt="">
+                        <img src="img/Ranking Number (9).png" class="artist__absolute" alt="">
+                        <h5>Animakid</h5>
+                        <p><span class="space__total">Total Sales:</span> <span class="spase__eth">34.53 ETH</span> </p>
+                    </div>
+                    <div class="artists__card display__none">
+                        <img src="img/Artist Avatar (9).png" class="artist__relative" alt="">
+                        <img src="img/Ranking Number (10).png" class="artist__absolute" alt="">
+                        <h5>Dotgu</h5>
+                        <p><span class="space__total">Total Sales:</span> <span class="spase__eth">34.53 ETH</span> </p>
+                    </div>
+                    <div class="artists__card display__none">
+                        <img src="img/Artist Avatar (10).png" class="artist__relative" alt="">
+                        <img src="img/Ranking Number (11).png" class="artist__absolute" alt="">
+                        <h5>Ghiblier</h5>
+                        <p><span class="space__total">Total Sales:</span> <span class="spase__eth">34.53 ETH</span> </p>
+                    </div>
+                    <div class="artists__btn artist__btn__media">
+                        <div class="artists__btn__logo"></div>
+                        <p>View Rankings</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="browse">
+            <div class="container">
+                <div class="browse__top">
+                    <h3>Browse Categories</h3>
+                </div>
+                <div class="browse__bottom">
+                    <div class="browse__card">
+                        <div class="browse__card__img"></div>
+                        <div class="browse__collection">
+                            <h5>Art</h5>
+                        </div>
+                    </div>
+                    <div class="browse__card">
+                        <div class="browse__card__img img-2"></div>
+                        <div class="browse__collection">
+                            <h5>Collectibles</h5>
+                        </div>
+                    </div>
+                    <div class="browse__card">
+                        <div class="browse__card__img img-3"></div>
+                        <div class="browse__collection">
+                            <h5>Music</h5>
+                        </div>
+                    </div>
+                    <div class="browse__card">
+                        <div class="browse__card__img img-4"></div>
+                        <div class="browse__collection">
+                            <h5>Photography</h5>
+                        </div>
+                    </div>
+                    <div class="browse__card">
+                        <div class="browse__card__img img-5"></div>
+                        <div class="browse__collection">
+                            <h5>Video</h5>
+                        </div>
+                    </div>
+                    <div class="browse__card">
+                        <div class="browse__card__img img-6"></div>
+                        <div class="browse__collection">
+                            <h5>Utility</h5>
+                        </div>
+                    </div>
+                    <div class="browse__card">
+                        <div class="browse__card__img img-7"></div>
+                        <div class="browse__collection">
+                            <h5>Sport</h5>
+                        </div>
+                    </div>
+                    <div class="browse__card">
+                        <div class="browse__card__img img-8"></div>
+                        <div class="browse__collection browse__padding">
+                            <h5>Virtual Worlds</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="discover">
+            <div class="container">
+                <div class="discover__top">
+                    <div class="artists__headline">
+                        <h3>Discover More NFTs</h3>
+                        <p>Explore new trending NFTs</p>
+                    </div>
+                    <div class="discover__btn">
+                        <div class="discover__btn__logo"></div>
+                        <p>See All</p>
+                    </div>
+                </div>
+                <div class="discover__bottom">
+                    <div class="hero__right discover__card ">
+                        <div class="hero__r__img discover__card__img1"></div>
+                        <div class="hero__r__frame discover__frame">
+                            <h5>Distant Galaxy</h5>
+                            <div class="hero__f__logo">
+                                <img src="img/Avatar (5).png" alt="">
+                                <p>MoonDancer</p>
+                            </div>
+                            <div class="discover__frame__bottom">
+                                <div class="frame__two">
+                                    <span class="space__total discover__position">Price</span>
+                                    <span class="spase__eth discover__position2">1.63 ETH</span> 
+                                </div>
+                                <div class="frame__two">
+                                    <span class="space__total discover__position">Highest Bid</span>
+                                    <span class="spase__eth discover__position2">0.33 wETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__right discover__card">
+                        <div class="hero__r__img discover__card__img2"></div>
+                        <div class="hero__r__frame discover__frame">
+                            <h5>Life On Edena</h5>
+                            <div class="hero__f__logo">
+                                <img src="img/Avatar (6).png" alt="">
+                                <p>NebulaKid</p>
+                            </div>
+                            <div class="discover__frame__bottom">
+                                <div class="frame__two">
+                                    <span class="space__total discover__position">Price</span>
+                                    <span class="spase__eth discover__position2">1.63 ETH</span> 
+                                </div>
+                                <div class="frame__two">
+                                    <span class="space__total discover__position">Highest Bid</span>
+                                    <span class="spase__eth discover__position2">0.33 wETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__right discover__card ">
+                        <div class="hero__r__img discover__card__img3"></div>
+                        <div class="hero__r__frame discover__frame">
+                            <h5>AstroFiction</h5>
+                            <div class="hero__f__logo">
+                                <img src="img/Avatar (7).png" alt="">
+                                <p>Spaceone</p>
+                            </div>
+                            <div class="discover__frame__bottom">
+                                <div class="frame__two">
+                                    <span class="space__total discover__position">Price</span>
+                                    <span class="spase__eth discover__position2">1.63 ETH</span> 
+                                </div>
+                                <div class="frame__two">
+                                    <span class="space__total discover__position">Highest Bid</span>
+                                    <span class="spase__eth discover__position2">0.33 wETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discover__btn discover__btn__none">
+                    <div class="discover__btn__logo"></div>
+                    <p>See All</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlight">
+            <div class="banner__highlight">
+                <div class="container">
+                    <div class="highlight__left">
+                        <div class="top__btn">
+                            <img src="img/Avatar (8).png" alt="">
+                            <p>Shroomie</p>
+                        </div>
+                        <h2>Magic Mashrooms</h2>
+                        <div class="bottom__btn">
+                            <img src="img/Eye.png" alt="">
+                            <p>See NFT</p>
+                        </div>
+                    </div>
+                    <div class="highlight__right">
+                        <p>Auction ends in:</p>
+                        <div class="highlight__timer">
+                            <div class="timer__group">
+                                <h3>59</h3>
+                                <p>Hours</p>
+                            </div>
+                            <h4 class="timer__margin">:</h4>
+                            <div class="timer__group">
+                                <h3>59</h3>
+                                <p>Minutes</p>
+                            </div>
+                            <h4 class="timer__margin">:</h4>
+                            <div class="timer__group">
+                                <h3>59</h3>
+                                <p>Seconds</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom__btn discover__btn__none">
+                        <img src="img/Eye.png" alt="">
+                        <p>See NFT</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="container">
+                <div class="trending__top how__top">
+                    <h3>How it works</h3>
+                    <p>Find out how to get started</p>
+                </div>
+                <div class="how__bottom">
+                    <div class="how__card">
+                        <img src="img/Icon.png" alt="">
+                        <div class="how__bottom__text">
+                            <h5>Setup Your wallet</h5>
+                            <p>Set up your wallet of choice. Connect it to the NFT market by clicking the wallet icon in the top right corner.</p>
+                        </div>
+                    </div>
+                    <div class="how__card">
+                        <img src="img/Icon (1).png" alt="">
+                        <div class="how__bottom__text">
+                            <h5>Create Collection</h5>
+                            <p>Upload your work and setup your collection. Add a description, social links and floor price.</p>
+                        </div>
+                    </div>
+                    <div class="how__card">
+                        <img src="img/Icon (2).png" alt="">
+                        <div class="how__bottom__text">
+                            <h5>Start Earning</h5>
+                            <p>Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe__box">
+                    <div class="subscribe__left">
+                        <img src="img/Photo.png" alt="">
+                    </div>
+                    <div class="subscribe__right">
+                        <h3>Join Our Weekly <br> Digest</h3>
+                        <p>Get Exclusive Promotions & Updates Straight To Your Inbox.</p>
+                        <img src="img/Subscribe Form.png" class="display__none" alt="">
+                        <div class="subscribe__widjet">
+                            <input type="text" placeholder="Enter Your Email Address">
+                            <div class="subscribe__btn">
+                                <div class="subscribe__btn__logo"></div>
+                                <span>Subscribe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer__lcr">
+                <div class="footer__left">
+                    <img src="img/Logo.png" alt="">
+                    <div class="additional__info">
+                        <p>NFT marketplace UI created with Anima for Figma.</p>
+                        <p>Join our community</p>
+                        <img src="img/Icons.png" alt="">
+                    </div>
+                </div>
+                <div class="footer__center">
+                    <h5>Explore</h5>
+                    <ul>
+                        <li>Marketplace</li>
+                        <li>Rankings</li>
+                        <li>Connect a wallet</li>
+                    </ul>
+                </div>
+                <div class="footer__right">
+                    <h5>Join our weekly digest</h5>
+                    <p>Get exclusive promotions & updates straight to your inbox.</p>
+                    <img src="img/Subscribe Form.png" alt="">
+                    <div class="subscribe__widjet">
+                        <input type="text" placeholder="Enter Your Email Address">
+                        <div class="subscribe__btn">
+                            <div class="subscribe__btn__logo"></div>
+                            <span>Subscribe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__line">
+                <hr>
+            </div>
+            <p class="footer__end">Ⓒ NFT Market. Use this template freely.</p>
+        </div>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
